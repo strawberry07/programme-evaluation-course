@@ -1,0 +1,7 @@
+# Add your custom domain here (one domain per line)
+# Example: course.yourdomain.com
+# Example: programme-evaluation.yourdomain.com
+# 
+# IMPORTANT: Remove the '#' and replace with your actual domain
+# The CNAME file should contain ONLY the domain name, no http:// or https://
+

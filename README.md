@@ -41,12 +41,37 @@ git push -u origin main
 
 ### Step 4: Access Your Website
 
-Your website will be available at:
+Your website is now live at:
 ```
-https://YOUR_USERNAME.github.io/REPO_NAME/
+https://strawberry07.github.io/programme-evaluation-course/
 ```
 
 **Note:** It may take a few minutes for the site to be live after enabling Pages.
+
+### Step 5: Set Up Custom Domain (Optional)
+
+If you want to use a custom domain (e.g., `course.yourdomain.com`):
+
+1. **Edit the CNAME file:**
+   - Open `CNAME` in this repository
+   - Replace the content with your domain name (e.g., `course.yourdomain.com`)
+   - No `http://` or `https://`, just the domain name
+   - Commit and push the change
+
+2. **Configure DNS with your domain provider:**
+   - Add a CNAME record pointing to: `strawberry07.github.io`
+   - Or add A records pointing to GitHub Pages IPs:
+     - `185.199.108.153`
+     - `185.199.109.153`
+     - `185.199.110.153`
+     - `185.199.111.153`
+
+3. **Enable custom domain in GitHub:**
+   - Go to repository Settings → Pages
+   - Under "Custom domain", enter your domain
+   - Check "Enforce HTTPS" (recommended)
+
+**Note:** DNS changes can take 24-48 hours to propagate.
 
 ### Updating Your Website
 
