@@ -1,186 +1,69 @@
-# Programme Evaluation Course Website
+# SOWK5810M Programme Evaluation
 
-A modern, responsive website for the Programme Evaluation course. This website allows students to navigate course materials, view the syllabus, access examples, and explore course content without requiring login.
+A comprehensive course website for the Programme Evaluation course at The Chinese University of Hong Kong.
 
-## 🌐 Publishing on GitHub Pages
+## 🌐 Live Website
 
-This website is ready to be published on GitHub Pages. Follow these steps:
+**Visit the course website:** [https://strawberry07.github.io/programme-evaluation-course/](https://strawberry07.github.io/programme-evaluation-course/)
 
-### Step 1: Create a GitHub Repository
+## Course Overview
 
-1. Go to [GitHub](https://github.com) and sign in
-2. Click the "+" icon in the top right → "New repository"
-3. Name your repository (e.g., `programme-evaluation-course`)
-4. **Do NOT** initialize with README, .gitignore, or license (we already have these)
-5. Click "Create repository"
+This course is designed to equip students with the knowledge and skills in conducting programme evaluation for human service programmes. The course covers programme evaluation as an integral part of professional practice, introducing concepts and methods from conceptualization to outcome stages.
 
-### Step 2: Push Your Code to GitHub
+### Key Topics
 
-Run these commands in your terminal (from the project directory):
+- Programme evaluation concepts and logic models
+- Stakeholder analysis and engagement
+- Evidence-based practice in social work
+- Needs assessment and theory of change
+- Process evaluation and implementation science
+- Outcome evaluation (qualitative, quantitative, and mixed methods)
+- Efficiency evaluation (cost-effectiveness and cost-benefit analysis)
+- Evaluation communication and reporting
 
-```bash
-cd /Users/jessicali/programme-evaluation-course
+## Course Information
 
-# Add the GitHub remote (replace YOUR_USERNAME and REPO_NAME)
-git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+- **Course Code:** SOWK5810M
+- **Course Title:** Programme Evaluation
+- **Credits:** 3
+- **Duration:** 13 Lectures
+- **Instructor:** LI Jia (Jessica), PhD
+- **Language:** English
+- **Venue:** YIA403
 
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
+## Website Features
 
-### Step 3: Enable GitHub Pages
+- 📋 Complete course outline with learning outcomes
+- 📅 Detailed syllabus with weekly schedule
+- 📊 Assessment details and requirements
+- 📚 Course materials and resources
+- 🔗 Real-world examples and case studies
+- ❓ Frequently asked questions
+- 📱 Fully responsive design
 
-1. Go to your repository on GitHub
-2. Click **Settings** (top menu)
-3. Scroll down to **Pages** (left sidebar)
-4. Under **Source**, select:
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Click **Save**
+## For Students
 
-### Step 4: Access Your Website
+This website provides all course information, materials, and resources. No login required - simply navigate through the sections to find what you need.
 
-Your website is now live at:
-```
-https://strawberry07.github.io/programme-evaluation-course/
-```
+## Technical Details
 
-**Note:** It may take a few minutes for the site to be live after enabling Pages.
+This is a static website built with HTML, CSS, and JavaScript, hosted on GitHub Pages. The website is fully responsive and works on all devices.
 
-### Step 5: Set Up Custom Domain (Optional)
-
-If you want to use a custom domain (e.g., `course.yourdomain.com`):
-
-1. **Edit the CNAME file:**
-   - Open `CNAME` in this repository
-   - Replace the content with your domain name (e.g., `course.yourdomain.com`)
-   - No `http://` or `https://`, just the domain name
-   - Commit and push the change
-
-2. **Configure DNS with your domain provider:**
-   - Add a CNAME record pointing to: `strawberry07.github.io`
-   - Or add A records pointing to GitHub Pages IPs:
-     - `185.199.108.153`
-     - `185.199.109.153`
-     - `185.199.110.153`
-     - `185.199.111.153`
-
-3. **Enable custom domain in GitHub:**
-   - Go to repository Settings → Pages
-   - Under "Custom domain", enter your domain
-   - Check "Enforce HTTPS" (recommended)
-
-**Note:** DNS changes can take 24-48 hours to propagate.
-
-### Updating Your Website
-
-After making changes to your files:
-
-```bash
-git add .
-git commit -m "Update website content"
-git push
-```
-
-Changes will be automatically reflected on your GitHub Pages site (may take 1-2 minutes).
-
-## Features
-
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Smooth Navigation**: Easy-to-use navigation menu with smooth scrolling
-- **Course Outline**: Comprehensive overview of course modules and learning objectives
-- **Syllabus**: Detailed course information including schedule, assessment, and requirements
-- **Materials Section**: Organized access to textbooks, readings, slides, and resources
-- **Examples & Case Studies**: Showcase of real-world evaluation examples
-
-## Getting Started
-
-### Viewing the Website
-
-1. Simply open `index.html` in your web browser
-2. No server or build process required - it's a static website
-
-### Local Development
-
-If you want to serve it locally (optional):
-
-```bash
-# Using Python 3
-python3 -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server
-
-# Then open http://localhost:8000 in your browser
-```
-
-## Customizing Content
-
-### Updating Course Outline
-
-Edit the Course Outline section in `index.html`:
-- Modify the learning objectives in the `<ul class="objectives-list">` section
-- Update or add course modules in the `.modules-grid` section
-
-### Updating Syllabus
-
-Edit the Syllabus section in `index.html`:
-- Update course information in the `.syllabus-info` section
-- Modify the weekly schedule in the `.schedule-table` section
-- Adjust assessment percentages in the `.assessment-grid` section
-
-### Adding Materials
-
-Add your course materials to the Materials section:
-- Update the `.material-list` items in each `.material-card`
-- Add links to actual files or resources as needed
-
-### Adding Examples
-
-Add your examples and case studies:
-- Update the `.example-card` elements in the Examples section
-- Add actual links to PDFs, documents, or other resources
-- Modify the tags and descriptions as needed
-
-## File Structure
+### File Structure
 
 ```
 programme-evaluation-course/
 ├── index.html          # Main HTML file
-├── styles.css          # All styling
+├── styles.css          # Styling
 ├── script.js           # JavaScript for interactivity
+├── hero-image.png      # Hero section image
+├── class-*.html        # Individual class pages
+├── midterm-exam.html   # Mid-term exam details
+├── group-project.html  # Group project details
+├── final-exam.html     # Final exam details
 └── README.md          # This file
 ```
 
-## Styling
-
-The website uses CSS custom properties (variables) for easy theming. You can customize colors by modifying the `:root` variables in `styles.css`:
-
-```css
-:root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --secondary-color: #64748b;
-    /* ... etc */
-}
-```
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Notes
-
-- This is a static website - no backend or database required
-- All content is editable directly in the HTML file
-- Images and additional resources can be added to a `assets/` folder if needed
-- The website uses modern CSS features (Grid, Flexbox, CSS Variables)
-
 ## License
 
-This website template is provided for educational use.
-
+© 2024 LI Jia, PhD - SOWK5810M Programme Evaluation. All rights reserved.
