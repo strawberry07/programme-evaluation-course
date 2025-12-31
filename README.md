@@ -2,6 +2,64 @@
 
 A modern, responsive website for the Programme Evaluation course. This website allows students to navigate course materials, view the syllabus, access examples, and explore course content without requiring login.
 
+## 🌐 Publishing on GitHub Pages
+
+This website is ready to be published on GitHub Pages. Follow these steps:
+
+### Step 1: Create a GitHub Repository
+
+1. Go to [GitHub](https://github.com) and sign in
+2. Click the "+" icon in the top right → "New repository"
+3. Name your repository (e.g., `programme-evaluation-course`)
+4. **Do NOT** initialize with README, .gitignore, or license (we already have these)
+5. Click "Create repository"
+
+### Step 2: Push Your Code to GitHub
+
+Run these commands in your terminal (from the project directory):
+
+```bash
+cd /Users/jessicali/programme-evaluation-course
+
+# Add the GitHub remote (replace YOUR_USERNAME and REPO_NAME)
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
+```
+
+### Step 3: Enable GitHub Pages
+
+1. Go to your repository on GitHub
+2. Click **Settings** (top menu)
+3. Scroll down to **Pages** (left sidebar)
+4. Under **Source**, select:
+   - Branch: `main`
+   - Folder: `/ (root)`
+5. Click **Save**
+
+### Step 4: Access Your Website
+
+Your website will be available at:
+```
+https://YOUR_USERNAME.github.io/REPO_NAME/
+```
+
+**Note:** It may take a few minutes for the site to be live after enabling Pages.
+
+### Updating Your Website
+
+After making changes to your files:
+
+```bash
+git add .
+git commit -m "Update website content"
+git push
+```
+
+Changes will be automatically reflected on your GitHub Pages site (may take 1-2 minutes).
+
 ## Features
 
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
